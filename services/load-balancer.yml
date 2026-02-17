@@ -6,6 +6,7 @@ spec:
   type: LoadBalancer
   selector:
     app: nginx
+    # app.kubernetes.io/name: webserver
   ports:
     - port: 80
       targetPort: 80

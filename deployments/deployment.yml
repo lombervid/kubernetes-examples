@@ -4,6 +4,7 @@ metadata:
   name: myapp-deployment
   labels:
     app: myapp
+    type: front-end
 spec:
   replicas: 3
   selector:
@@ -13,6 +14,7 @@ spec:
     metadata:
       name: nginx-pod
       labels:
+        # app.kubernetes.io/name: webserver
         app: nginx
         type: front-end
     spec:

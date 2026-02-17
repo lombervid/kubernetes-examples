@@ -3,6 +3,7 @@ kind: Pod
 metadata:
   name: nginx-pod
   labels:
+    # app.kubernetes.io/name: webserver
     app: nginx
     type: front-end
 spec:
